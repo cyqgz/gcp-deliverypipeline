@@ -11,7 +11,7 @@ steps:
     args: 
       - '-c'
       - >
-        gcloud alpha deploy releases create $(date +%y%m%d-%s)
+        gcloud alpha deploy releases create web-app-002
         --delivery-pipeline=web-app --build-artifacts=artifacts.json
         --source=./
         --region=us-central1
