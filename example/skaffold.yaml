@@ -7,7 +7,7 @@ build:
     - image: leeroy-app
       context: leeroy-app
   googleCloudBuild:
-    projectId: next-2021-dev203
+    projectId: silicon-parity-339317
 deploy:
   kubectl:
     manifests:
