@@ -12,7 +12,7 @@ steps:
       - '-c'
       - >
         gcloud deploy releases create rel-$(date +%y%m%d)
-        --delivery-pipeline=data-flow --build-artifacts=artifacts.json
+        --delivery-pipeline=web-app --build-artifacts=artifacts.json
         --source=./
         --region=us-central1
     dir: example
