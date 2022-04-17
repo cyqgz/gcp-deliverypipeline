@@ -11,7 +11,7 @@ steps:
     args: 
       - '-c'
       - >
-        gcloud deploy releases create web-app-$date
+        gcloud deploy releases create web-$(date +%y%m%d)
         --delivery-pipeline=data-flow --build-artifacts=artifacts.json
         --source=./
         --region=us-central1
